@@ -1,0 +1,116 @@
+// 1. Import the initial variables
+@import "bulma.min";
+@import "../node_modules/bulma/sass/utilities/_all";
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=c1841fd8-ffc8-425b-8213-34cd601dff38");
+
+@font-face {
+	font-family: "MojiTimesVariable";
+	src: url('/fonts/MojiTimesVariableGX.ttf');
+}
+@media screen and (min-width: 1472px){
+	.container {
+max-width: 1450px;
+width: 1450px;
+}
+}
+body{
+	background-image: url('../img/back.svg');
+	background-size: cover;
+	.container{
+		background-color: rgba(255,255,255,0.97);
+		padding: 2rem;
+	}
+}
+textarea {
+	z-index: 0;
+	line-height: 1.3em;
+	color: #000;
+	font-family: 'MojiTimesVariable', sans-serif;
+	font-feature-settings: "kern"on, "liga"on, "calt"on;
+	-moz-font-feature-settings: "kern"on, "liga"on, "calt"on;
+	-webkit-font-feature-settings: "kern"on, "liga"on, "calt"on;
+	-ms-font-feature-settings: "kern"on, "liga"on, "calt"on;
+	-o-font-feature-settings: "kern"on, "liga"on, "calt"on;
+	font-variation-settings: "shpe"0;
+	appearance: none;
+	width: 100%;
+	height: 34rem;
+	margin: 0;
+	padding: 0.5rem 1rem;
+	background: none;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	font-size: 4.9em;
+	text-align: center;
+	resize: none;
+	text-transform: uppercase;
+}
+.fullheight{
+	height: 100vh;
+}
+#textInput {
+	color: #777;
+	background-color: #eee;
+	border-radius: 5px;
+	background: #eee;
+	border: none;
+	height: 2em;
+	padding: 0.5em;
+	margin: 5px;
+	width: 97%;
+}
+
+.labeldiv {
+	width: 50%;
+	display: inline-block;
+}
+
+label {
+	z-index: 2;
+	position: absolute;
+	pointer-events: none;
+	width: 100%;
+	height: 2em;
+	margin: 0;
+	padding: 1em;
+	vertical-align: text-top;
+	font: x-small sans-serif;
+	color: 000;
+	opacity: 0.5;
+}
+
+.slider {
+	z-index: 1;
+	position: relative;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 100%;
+	height: 5px;
+	border-radius: 3px;
+	background: #FF0066;
+	padding: 0px;
+	margin: 10px;
+	margin-bottom: 4rem;
+	cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+	z-index: 3;
+	position: relative;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: white;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 0px 0px 5px #ff0066;
+	        box-shadow: 0px 0px 0px 5px #ff0066;
+}
+
+a {
+	color: #333;
+}
